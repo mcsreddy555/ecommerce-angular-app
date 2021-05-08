@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+	background: #fff;
+	font-size: 15px;
+	line-height: 1.8;
+	font-weight: 400;
+    color: black;
+    letter-spacing: 0.5px;
+    background: #f8f9fa;
+}
+p {
+    font-size: 12px;
+}
+span{
+    font-size: 12px;
+}
+
+.button{
+    border-radius: 0 !important;
+    border-color: #3f51b5 !important;
+	transition: all 0.3s ease 0s;
+	background: #fff;
+}
+.button:hover {
+    background-color: #3f51b5;
+    color: white;
+}
+mat-card {
+    border: 1px solid lavender;
+    box-shadow: none !important;
+    transition: 0.3s !important;
+    width: 250px !important;
+    margin: 10px 10px !important;
+}
+
+mat-card img{
+    padding-bottom: 0px !important;
+    transition: 0.5s !important;
+}
+
+mat-card img:hover{
+    border: #fff !important;
+    transform: scale(1.1);
+    z-index: 2;
+}
+mat-card:hover{
+    box-shadow: none !important;
+}

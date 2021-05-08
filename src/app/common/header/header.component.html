@@ -1,0 +1,69 @@
+<!-- <div class="contact-box">
+    <div class="first">+ 1235 2355 98</div>
+    <div class="second">YOUREMAIL@EMAIL.COM</div>
+    <div class="third">3-5 BUSINESS DAYS DELIVERY & FREE RETURNS</div>
+</div> -->
+<!-- <mat-progress-bar mode="indeterminate" *ngIf="loadingEnable"></mat-progress-bar> -->
+<div class="header-box">
+    <div class="container">
+
+        <div class="logo">
+            <a [routerLink]="['/home']" > <img
+                    src="https://www.nicepng.com/png/full/247-2475175_ecommerce-e-commerce-website-logo.png"
+                    width="80px" height="50px">
+            </a>
+        </div>
+
+
+        <!-- <form class="example-form">
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Search">
+                    <mat-icon matSuffix>search</mat-icon>
+                </mat-form-field>
+            </form> -->
+
+        <div class="menu">
+            <ul class="list">
+                <li class="contain"  [routerLink]="['/home']"><span>HOME</span></li>
+                <li class="contain" [routerLink]="['/products']"><span>PRODUCTS</span></li>
+                <li class="contain"><span>IMAGES</span></li>
+                <li class="contain"><span>CONTACT-US</span>
+                </li>
+
+                <li class="contain" *ngIf="!user">
+                    <button mat-stroked-button color="primary" class="button">LOGIN</button>
+                </li>
+
+                <li class="contain profile dropdown" *ngIf="user">
+                    <img src="https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/profile-pic-male_2fd3e8.svg"
+                        width="25px">
+
+                    <div class="dropdown-content">
+                        <a>My Profile</a>
+                        <a>Orders</a>
+                        <a>Wishlist</a>
+                        <a>Notifications</a>
+                        <a>Logout</a>
+                    </div>
+                </li>
+                <li class="contain">
+                    <mat-icon>add_shopping_cart</mat-icon>
+                </li>
+            </ul>
+        </div>
+        <div class="cart-icon mobile-view">
+            <button mat-stroked-button color="primary" class="button">LOGIN</button>
+        </div>
+        <div class="cart-icon mobile-view">
+            <a >
+                <mat-icon>notification_important</mat-icon>
+            </a>&nbsp; &nbsp;
+            <a>
+                <mat-icon>add_shopping_cart</mat-icon>
+            </a>
+        </div>
+
+
+    </div>
+</div>
+<!-- <app-sidenav class="sidenavEnable"></app-sidenav> -->
